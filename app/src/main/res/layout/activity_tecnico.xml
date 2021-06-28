@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tecnico">
+
+
+    <ScrollView
+        android:layout_width="791dp"
+        android:layout_height="442dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Local"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/local_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número Série Contador"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/serie_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="ID MWMT"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Leitura"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/local_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="false" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Multiplicador"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/multiplicador_textbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:clickable="false"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:editable="false"
+                android:ems="10" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Data e Hora"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/id_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/id_hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="HH:MM"
+                android:inputType="date" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Submeter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
